@@ -524,10 +524,20 @@ These tests cover retained robustness-related logic, not the entire original res
 
 The merged CSV files used by training and some evaluation stages are intentionally not committed because they are too large for normal GitHub storage.
 
+The upstream dataset used for this project can be obtained from:
+
+- `https://www.kaggle.com/datasets/cyberdeeplearning/ciciomt2024`
+
 Those expected local files are:
 
 - `data/merged/metadata_train.csv`
 - `data/merged/metadata_test.csv`
+
+The merge logic is already included in this repository as:
+
+- `scripts/merge_ciciomt_with_metadata.py`
+
+That single script creates both merged outputs above; there are not separate train and test merge scripts.
 
 If someone wants to rebuild data-dependent stages, they should consult:
 
