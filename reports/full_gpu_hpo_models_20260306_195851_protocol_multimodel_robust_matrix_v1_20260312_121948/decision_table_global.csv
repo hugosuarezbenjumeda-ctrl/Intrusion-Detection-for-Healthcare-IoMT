@@ -1,0 +1,13 @@
+candidate_key,candidate_group_key,model_name,family_id,seed,protocols_present,has_all_protocols,gate_pass,gate_failure_category,worst_attacked_benign_fpr,worst_clean_fpr,worst_adv_malicious_recall,mean_clean_f1,mean_robust_f1,final_rank
+xgboost__B__42,xgboost__B,xgboost,B,42,"bluetooth,mqtt,wifi",True,True,none,0.0,5.307714763408614e-05,0.99,0.9968886470878168,0.9970989827616714,1
+lightgbm__B__42,lightgbm__B,lightgbm,B,42,"bluetooth,mqtt,wifi",True,False,adv_recall_only,0.0,2.653857381704307e-05,0.05266666666666667,0.6714547306349005,0.6975669959600932,2
+lightgbm__C__42,lightgbm__C,lightgbm,C,42,"bluetooth,mqtt,wifi",True,False,adv_recall_only,0.0,2.653857381704307e-05,0.05,0.6713331042761527,0.6958463909395035,3
+xgboost__C__42,xgboost__C,xgboost,C,42,"bluetooth,mqtt,wifi",True,False,adv_recall_only,0.0,5.307714763408614e-05,0.0026666666666666666,0.6664210354637007,0.6674373025544108,4
+mlp__C__42,mlp__C,mlp,C,42,"bluetooth,mqtt,wifi",True,False,adv_recall_only,0.0,9.139097057210747e-05,0.0,0.5157055052429104,0.5200977315077221,5
+lightgbm__A__42,lightgbm__A,lightgbm,A,42,"bluetooth,mqtt,wifi",True,False,adv_recall_only,0.0006666666666666666,0.0,0.046,0.6710077527911054,0.6939793560393044,6
+catboost__A__42,catboost__A,catboost,A,42,"bluetooth,mqtt,wifi",True,False,adv_recall_only,0.0006666666666666666,5.307714763408614e-05,0.0013333333333333333,0.6638584174433039,0.6649897845147678,7
+catboost__B__42,catboost__B,catboost,B,42,"bluetooth,mqtt,wifi",True,False,adv_recall_only,0.0006666666666666666,7.961572145112921e-05,0.7926666666666666,0.9651361557047858,0.9594425264612081,8
+catboost__C__42,catboost__C,catboost,C,42,"bluetooth,mqtt,wifi",True,False,adv_recall_only,0.0013333333333333333,0.00013269286908521537,0.5913333333333334,0.9680234020998153,0.9119438378016168,9
+mlp__A__42,mlp__A,mlp,A,42,"bluetooth,mqtt,wifi",True,False,adv_recall_only,0.002,0.0022847742643026868,0.0,0.5123140231861375,0.5169666389570888,10
+mlp__B__42,mlp__B,mlp,B,42,"bluetooth,mqtt,wifi",True,False,adv_recall_only,0.0026666666666666666,0.001971414489896501,0.0,0.5178648175463918,0.5212366964007313,11
+xgboost__A__42,xgboost__A,xgboost,A,42,"bluetooth,mqtt,wifi",True,False,both,0.17266666666666666,0.19347468470115153,0.9773333333333334,0.9641510151344775,0.9682672680717843,12

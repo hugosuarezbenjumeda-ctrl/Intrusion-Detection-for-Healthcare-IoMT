@@ -1,0 +1,4 @@
+protocol_hint,rows,benign_rows,attack_rows,benign_ratio,attack_ratio
+wifi,8640752,422731,8218021,0.048923,0.951077
+mqtt,524217,197564,326653,0.376874,0.623126
+bluetooth,155076,30067,125009,0.193886,0.806114

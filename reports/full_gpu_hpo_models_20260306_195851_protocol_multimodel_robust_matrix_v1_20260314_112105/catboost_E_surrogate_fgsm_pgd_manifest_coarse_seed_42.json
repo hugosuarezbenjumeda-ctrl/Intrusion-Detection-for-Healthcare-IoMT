@@ -1,0 +1,106 @@
+{
+  "generated_at_epoch_sec": 1773601526.7978547,
+  "elapsed_sec": 178.19856214523315,
+  "base_run_dir": "C:\\Users\\Hugo\\Desktop\\Thesis\\Medical-IoMT-\\reports\\full_gpu_hpo_models_20260306_195851",
+  "matrix_run_dir": "C:\\Users\\Hugo\\Desktop\\Thesis\\Medical-IoMT-\\reports\\full_gpu_hpo_models_20260306_195851_protocol_multimodel_robust_matrix_v1_20260314_112105",
+  "train_csv": "C:\\Users\\Hugo\\Desktop\\Thesis\\Medical-IoMT-\\data\\merged\\metadata_train.csv",
+  "test_csv": "C:\\Users\\Hugo\\Desktop\\Thesis\\Medical-IoMT-\\data\\merged\\metadata_test.csv",
+  "protocols": [
+    "wifi",
+    "mqtt",
+    "bluetooth"
+  ],
+  "default_protocol": "wifi",
+  "model_name": "catboost",
+  "family_id": "E",
+  "stage_name": "coarse",
+  "seed": 42,
+  "attack_methods": [
+    "surrogate_fgsm",
+    "surrogate_pgd"
+  ],
+  "epsilons": [
+    0.0,
+    0.01,
+    0.02,
+    0.05,
+    0.1
+  ],
+  "pgd_steps": 10,
+  "pgd_alpha_ratio": 0.25,
+  "surrogate_train_per_protocol": 200000,
+  "surrogate_epochs": 12,
+  "surrogate_lr": 0.08,
+  "surrogate_batch_size": 4096,
+  "percentile_lower": 1.0,
+  "percentile_upper": 99.0,
+  "chunk_size": 200000,
+  "max_test_rows": 0,
+  "feature_count": 45,
+  "rows_scanned": 1650153,
+  "chunks_seen": 9,
+  "unknown_protocol_rows_routed_to_default": 0,
+  "train_sample_meta": {
+    "counts_available": {
+      "bluetooth": 123235,
+      "wifi": 7086155,
+      "mqtt": 460502
+    },
+    "counts_sampled": {
+      "wifi": 200000,
+      "mqtt": 200000,
+      "bluetooth": 123235
+    },
+    "target_per_protocol": 200000,
+    "rows_sampled_total": 523235
+  },
+  "surrogate_meta": {
+    "wifi": {
+      "n_rows": 200000,
+      "n_pos": 189300,
+      "n_neg": 10700,
+      "single_class": 0
+    },
+    "mqtt": {
+      "n_rows": 200000,
+      "n_pos": 114010,
+      "n_neg": 85990,
+      "single_class": 0
+    },
+    "bluetooth": {
+      "n_rows": 123235,
+      "n_pos": 99839,
+      "n_neg": 23396,
+      "single_class": 0
+    }
+  },
+  "protocol_artifacts": {
+    "wifi": {
+      "threshold": 0.9066666667657811,
+      "candidate_dir": "C:\\Users\\Hugo\\Desktop\\Thesis\\Medical-IoMT-\\reports\\full_gpu_hpo_models_20260306_195851_protocol_multimodel_robust_matrix_v1_20260314_112105\\candidates\\coarse_wifi_catboost_E_seed_42",
+      "summary_path": "C:\\Users\\Hugo\\Desktop\\Thesis\\Medical-IoMT-\\reports\\full_gpu_hpo_models_20260306_195851_protocol_multimodel_robust_matrix_v1_20260314_112105\\candidates\\coarse_wifi_catboost_E_seed_42\\candidate_summary.json",
+      "model_path": "C:\\Users\\Hugo\\Desktop\\Thesis\\Medical-IoMT-\\reports\\full_gpu_hpo_models_20260306_195851_protocol_multimodel_robust_matrix_v1_20260314_112105\\candidates\\coarse_wifi_catboost_E_seed_42\\models\\wifi__catboost__E.cbm"
+    },
+    "mqtt": {
+      "threshold": 0.9666666583331858,
+      "candidate_dir": "C:\\Users\\Hugo\\Desktop\\Thesis\\Medical-IoMT-\\reports\\full_gpu_hpo_models_20260306_195851_protocol_multimodel_robust_matrix_v1_20260314_112105\\candidates\\coarse_mqtt_catboost_E_seed_42",
+      "summary_path": "C:\\Users\\Hugo\\Desktop\\Thesis\\Medical-IoMT-\\reports\\full_gpu_hpo_models_20260306_195851_protocol_multimodel_robust_matrix_v1_20260314_112105\\candidates\\coarse_mqtt_catboost_E_seed_42\\candidate_summary.json",
+      "model_path": "C:\\Users\\Hugo\\Desktop\\Thesis\\Medical-IoMT-\\reports\\full_gpu_hpo_models_20260306_195851_protocol_multimodel_robust_matrix_v1_20260314_112105\\candidates\\coarse_mqtt_catboost_E_seed_42\\models\\mqtt__catboost__E.cbm"
+    },
+    "bluetooth": {
+      "threshold": 0.8800000753780836,
+      "candidate_dir": "C:\\Users\\Hugo\\Desktop\\Thesis\\Medical-IoMT-\\reports\\full_gpu_hpo_models_20260306_195851_protocol_multimodel_robust_matrix_v1_20260314_112105\\candidates\\coarse_bluetooth_catboost_E_seed_42",
+      "summary_path": "C:\\Users\\Hugo\\Desktop\\Thesis\\Medical-IoMT-\\reports\\full_gpu_hpo_models_20260306_195851_protocol_multimodel_robust_matrix_v1_20260314_112105\\candidates\\coarse_bluetooth_catboost_E_seed_42\\candidate_summary.json",
+      "model_path": "C:\\Users\\Hugo\\Desktop\\Thesis\\Medical-IoMT-\\reports\\full_gpu_hpo_models_20260306_195851_protocol_multimodel_robust_matrix_v1_20260314_112105\\candidates\\coarse_bluetooth_catboost_E_seed_42\\models\\bluetooth__catboost__E.cbm"
+    }
+  },
+  "outputs": {
+    "metrics_csv": "C:\\Users\\Hugo\\Desktop\\Thesis\\Medical-IoMT-\\reports\\full_gpu_hpo_models_20260306_195851_protocol_multimodel_robust_matrix_v1_20260314_112105\\catboost_E_surrogate_fgsm_pgd_metrics_coarse_seed_42.csv",
+    "manifest_json": "C:\\Users\\Hugo\\Desktop\\Thesis\\Medical-IoMT-\\reports\\full_gpu_hpo_models_20260306_195851_protocol_multimodel_robust_matrix_v1_20260314_112105\\catboost_E_surrogate_fgsm_pgd_manifest_coarse_seed_42.json",
+    "constraints_csv": "C:\\Users\\Hugo\\Desktop\\Thesis\\Medical-IoMT-\\reports\\full_gpu_hpo_models_20260306_195851_protocol_multimodel_robust_matrix_v1_20260314_112105\\catboost_E_surrogate_constraints_coarse_seed_42.csv"
+  },
+  "notes": [
+    "Surrogate FGSM/PGD attacks are applied to malicious rows only; benign rows remain unchanged.",
+    "Predictions use saved protocol-specific thresholds from CatBoost family-E candidate summaries."
+  ]
+}

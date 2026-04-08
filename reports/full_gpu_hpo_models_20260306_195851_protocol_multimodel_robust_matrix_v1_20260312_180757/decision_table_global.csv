@@ -1,0 +1,16 @@
+candidate_key,candidate_group_key,model_name,family_id,seed,protocols_present,has_all_protocols,gate_pass,gate_failure_category,worst_attacked_benign_fpr,worst_clean_fpr,worst_adv_malicious_recall,mean_clean_f1,mean_robust_f1,final_rank
+catboost__B__42,catboost__B,catboost,B,42,"bluetooth,mqtt,wifi",True,True,none,0.001,0.0014785608674223755,0.99,0.9985544970585463,0.9971553703467677,1
+xgboost__E__42,xgboost__E,xgboost,E,42,"bluetooth,mqtt,wifi",True,False,fpr_only,0.017,0.011828486939379004,0.99,0.9977336111589402,0.9938423311799801,2
+xgboost__C__42,xgboost__C,xgboost,C,42,"bluetooth,mqtt,wifi",True,False,fpr_only,0.454,0.4739992688722354,0.99,0.928882073106177,0.9309258574872851,3
+catboost__C__42,catboost__C,catboost,C,42,"bluetooth,mqtt,wifi",True,False,fpr_only,0.535,0.5333577042588192,0.99,0.9232421295800678,0.926647609231272,4
+xgboost__D__42,xgboost__D,xgboost,D,42,"bluetooth,mqtt,wifi",True,False,fpr_only,0.537,0.5565710107841345,0.99,0.9200837462134995,0.9215629039814291,5
+catboost__E__42,catboost__E,catboost,E,42,"bluetooth,mqtt,wifi",True,False,fpr_only,0.547,0.5466093949917749,0.99,0.9220353233293173,0.9255754185915039,6
+catboost__A__42,catboost__A,catboost,A,42,"bluetooth,mqtt,wifi",True,False,fpr_only,0.776,0.7690550173642844,0.99,0.8990734962624751,0.9015268613258564,7
+catboost__D__42,catboost__D,catboost,D,42,"bluetooth,mqtt,wifi",True,False,fpr_only,0.783,0.7825808810089563,0.991,0.8986951250795329,0.9036074503492256,8
+mlp__B__42,mlp__B,mlp,B,42,"bluetooth,mqtt,wifi",True,False,fpr_only,0.87,0.8612685066715409,0.99,0.8785479176215647,0.8579540800993902,9
+mlp__E__42,mlp__E,mlp,E,42,"bluetooth,mqtt,wifi",True,False,fpr_only,0.883,0.8714585998903308,0.99,0.8846219340731031,0.8695266345200112,10
+mlp__C__42,mlp__C,mlp,C,42,"bluetooth,mqtt,wifi",True,False,fpr_only,0.917,0.9105739352951928,0.99,0.8810497896998011,0.8644715215069021,11
+mlp__A__42,mlp__A,mlp,A,42,"bluetooth,mqtt,wifi",True,False,fpr_only,0.934,0.9334216779382197,0.99,0.8748204942058048,0.8571964760086755,12
+mlp__D__42,mlp__D,mlp,D,42,"bluetooth,mqtt,wifi",True,False,fpr_only,0.949,0.9442058124657284,0.99,0.8630882738268567,0.8428673032849027,13
+xgboost__B__42,xgboost__B,xgboost,B,42,"bluetooth,mqtt,wifi",True,False,fpr_only,0.97,0.9740906598428075,0.99,0.8826890456822868,0.884838948063046,14
+xgboost__A__42,xgboost__A,xgboost,A,42,"bluetooth,mqtt,wifi",True,False,fpr_only,0.975,0.9784774264302687,0.99,0.8826005309527254,0.8843127107218051,15

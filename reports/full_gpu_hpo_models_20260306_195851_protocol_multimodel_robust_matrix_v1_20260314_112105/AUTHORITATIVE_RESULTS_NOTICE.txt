@@ -1,0 +1,3 @@
+Authoritative: decision_table_protocol_<protocol>.csv, decision_table_global.csv,
+stability_check_global.csv, escalation_recommendation.json.
+Legacy copied metrics are non-authoritative.

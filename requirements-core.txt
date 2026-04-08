@@ -1,0 +1,21 @@
+# Core numeric/data stack used across the retained scripts
+numpy==1.26.4
+pandas==2.2.3
+
+# Training/evaluation dependencies used by heavier retained scripts
+# Exact version not recovered from the current local environment snapshot.
+scikit-learn
+xgboost==2.1.4
+catboost==1.2.10
+lightgbm==4.6.0
+# Exact version not recovered from the current local environment snapshot.
+torch
+
+# Notebook / plotting / UI support used by retained tooling
+matplotlib==3.9.4
+# Exact version not recovered from the current local environment snapshot.
+streamlit
+
+# Compatibility/helper dependency retained for environment reconstruction
+# Exact version not recovered from the current local environment snapshot.
+joblib

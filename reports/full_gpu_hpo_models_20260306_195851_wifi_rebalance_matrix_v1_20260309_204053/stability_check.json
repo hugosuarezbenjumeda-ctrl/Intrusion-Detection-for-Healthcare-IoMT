@@ -1,0 +1,22 @@
+[
+  {
+    "seed": 42,
+    "family_id": "A",
+    "family_name": "fpr_priority",
+    "gate_pass": 1,
+    "clean_fpr": 0.0037471376032197625,
+    "attacked_benign_fpr": 0.0035,
+    "adv_malicious_recall": 0.99,
+    "source": "matrix_primary"
+  },
+  {
+    "seed": 43,
+    "family_id": "A",
+    "family_name": "fpr_priority",
+    "gate_pass": 0,
+    "clean_fpr": 0.0,
+    "attacked_benign_fpr": 0.0,
+    "adv_malicious_recall": 0.447,
+    "source": "stability_rerun"
+  }
+]

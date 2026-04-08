@@ -1,0 +1,12 @@
+{
+  "triggered": 0,
+  "reason": "none",
+  "recommendation": "stable_candidate_ready",
+  "protocol_hard_cap": {
+    "wifi": 0,
+    "mqtt": 0,
+    "bluetooth": 0
+  },
+  "strict_fpr_feasibility_check": 1,
+  "min_val_benign_for_fpr_gate": 200
+}

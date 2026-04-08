@@ -1,0 +1,71 @@
+{
+  "bluetooth": {
+    "models": [
+      "catboost_tuned",
+      "complex_mlp_tuned",
+      "lightgbm_tuned",
+      "xgboost_tuned"
+    ],
+    "weights": [
+      0.3029671419863088,
+      0.3716388518401782,
+      0.2218984720583281,
+      0.10349553411518499
+    ],
+    "threshold": 0.6182764627275031,
+    "val_fpr": 0.0,
+    "val_recall": 1.0,
+    "val_precision": 1.0,
+    "val_f1": 1.0,
+    "feasible": 1.0,
+    "val_pr_auc": 1.0,
+    "objective": 1.05,
+    "fpr_gap": 0.0
+  },
+  "mqtt": {
+    "models": [
+      "catboost_tuned",
+      "complex_mlp_tuned",
+      "lightgbm_tuned",
+      "xgboost_tuned"
+    ],
+    "weights": [
+      0.4818550588405314,
+      0.2461659974520087,
+      0.25017699567869023,
+      0.02180194802876938
+    ],
+    "threshold": 0.47343002525368977,
+    "val_fpr": 0.0002023216408285071,
+    "val_recall": 0.999448962529452,
+    "val_precision": 0.999847928982835,
+    "val_f1": 0.9996484059485913,
+    "feasible": 1.0,
+    "val_pr_auc": 0.9999991692443067,
+    "objective": 1.0496483644108066,
+    "fpr_gap": 0.0
+  },
+  "wifi": {
+    "models": [
+      "catboost_tuned",
+      "complex_mlp_tuned",
+      "lightgbm_tuned",
+      "xgboost_tuned"
+    ],
+    "weights": [
+      0.08896558286957851,
+      0.0015234587096834506,
+      0.28623444127440284,
+      0.6232765171463351
+    ],
+    "threshold": 0.43829196008517346,
+    "val_fpr": 0.0023941068139963165,
+    "val_recall": 0.9994473695986158,
+    "val_precision": 0.999864209606648,
+    "val_f1": 0.9996557461487766,
+    "feasible": 1.0,
+    "val_pr_auc": 0.999999255155041,
+    "objective": 1.0496557089065286,
+    "fpr_gap": 0.0
+  }
+}

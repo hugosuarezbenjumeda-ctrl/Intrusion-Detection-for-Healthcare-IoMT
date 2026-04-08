@@ -1,0 +1,71 @@
+{
+  "generated_at_epoch_sec": 1775482043.7221396,
+  "elapsed_sec": 179.4846637248993,
+  "base_run_dir": "C:\\Users\\Hugo\\Desktop\\Thesis\\Medical-IoMT-\\reports\\full_gpu_hpo_models_20260306_195851",
+  "matrix_run_dir": "C:\\Users\\Hugo\\Desktop\\Thesis\\Medical-IoMT-\\reports\\full_gpu_hpo_models_20260306_195851_protocol_multimodel_robust_matrix_v1_20260314_112105",
+  "train_csv": "C:\\Users\\Hugo\\Desktop\\Thesis\\Medical-IoMT-\\data\\merged\\metadata_train.csv",
+  "test_csv": "C:\\Users\\Hugo\\Desktop\\Thesis\\Medical-IoMT-\\data\\merged\\metadata_test.csv",
+  "protocols": [
+    "wifi",
+    "mqtt",
+    "bluetooth"
+  ],
+  "thresholds_used": {
+    "wifi": 0.8966666667657811,
+    "mqtt": 0.9466666583331858,
+    "bluetooth": 0.8700000753780835
+  },
+  "attack_methods": [
+    "surrogate_fgsm",
+    "surrogate_pgd"
+  ],
+  "epsilons": [
+    0.0,
+    0.01,
+    0.02,
+    0.05,
+    0.1
+  ],
+  "train_sample_meta": {
+    "counts_available": {
+      "bluetooth": 123235,
+      "wifi": 7086155,
+      "mqtt": 460502
+    },
+    "counts_sampled": {
+      "wifi": 200000,
+      "mqtt": 200000,
+      "bluetooth": 123235
+    },
+    "target_per_protocol": 200000,
+    "rows_sampled_total": 523235
+  },
+  "surrogate_meta": {
+    "wifi": {
+      "n_rows": 200000,
+      "n_pos": 189300,
+      "n_neg": 10700,
+      "single_class": 0
+    },
+    "mqtt": {
+      "n_rows": 200000,
+      "n_pos": 114010,
+      "n_neg": 85990,
+      "single_class": 0
+    },
+    "bluetooth": {
+      "n_rows": 123235,
+      "n_pos": 99839,
+      "n_neg": 23396,
+      "single_class": 0
+    }
+  },
+  "rows_scanned": 1650153,
+  "chunks_seen": 9,
+  "files": {
+    "table_5_1_csv": "C:\\Users\\Hugo\\Desktop\\Thesis\\Medical-IoMT-\\reports\\full_gpu_hpo_models_20260306_195851_protocol_multimodel_robust_matrix_v1_20260314_112105\\catboost_E_tuned_tables_table_5_1_protocol_metrics.csv",
+    "table_5_2_csv": "C:\\Users\\Hugo\\Desktop\\Thesis\\Medical-IoMT-\\reports\\full_gpu_hpo_models_20260306_195851_protocol_multimodel_robust_matrix_v1_20260314_112105\\catboost_E_tuned_tables_table_5_2_robustness_metrics.csv",
+    "tables_markdown": "C:\\Users\\Hugo\\Desktop\\Thesis\\Medical-IoMT-\\reports\\full_gpu_hpo_models_20260306_195851_protocol_multimodel_robust_matrix_v1_20260314_112105\\catboost_E_tuned_tables_thesis_tables.md",
+    "manifest_json": "C:\\Users\\Hugo\\Desktop\\Thesis\\Medical-IoMT-\\reports\\full_gpu_hpo_models_20260306_195851_protocol_multimodel_robust_matrix_v1_20260314_112105\\catboost_E_tuned_tables_manifest.json"
+  }
+}

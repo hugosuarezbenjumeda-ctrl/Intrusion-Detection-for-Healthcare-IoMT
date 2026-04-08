@@ -1,0 +1,4 @@
+candidate_group,seed42_rank,all_seed_gate_pass,num_seeds_checked,worst_clean_fpr_pct,worst_attacked_benign_fpr_pct,worst_adv_recall_pct,candidate_group_key
+xgboost_A,1,No,9,1.08%,1.23%,99.01%,xgboost__A
+xgboost_C,2,No,9,2.81%,2.76%,99.00%,xgboost__C
+catboost_E,6,Yes,9,0.25%,0.10%,99.01%,catboost__E

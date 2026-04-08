@@ -1,0 +1,4 @@
+protocol_hint,train_rows,test_rows,train_share,test_share,share_diff_test_minus_train
+mqtt,460502,63715,0.060040,0.038612,-0.021429
+wifi,7086155,1554597,0.923892,0.942093,0.018200
+bluetooth,123235,31841,0.016067,0.019296,0.003228

@@ -1,0 +1,7 @@
+protocol,label,rows,unique_files,largest_file_share,fallback_type,val_rows,fpr_resolution,split_seed_used,floor_target,floor_applied,rows_moved_to_train,benign_train_before_floor,benign_train_after_floor
+bluetooth,0,23396,10,0.929603351000171,none,15396,6.495193556767992e-05,42,8000,True,6488,1512,8000
+bluetooth,1,99839,1,1.0,row_level_single_file,19968,5.0080128205128203e-05,42,0,False,0,0,0
+mqtt,0,197564,1,1.0,row_level_single_file,39513,2.530812643939969e-05,42,0,False,0,0,0
+mqtt,1,262938,5,0.6580866972442173,file_level_rebalance,44376,2.2534703443302687e-05,42,0,False,0,0,0
+wifi,0,380994,37,0.5058662341139231,none,43233,2.3130479032220758e-05,42,0,False,0,0,0
+wifi,1,6705161,45,0.030915737892050616,none,1660984,6.020527590873843e-07,42,0,False,0,0,0

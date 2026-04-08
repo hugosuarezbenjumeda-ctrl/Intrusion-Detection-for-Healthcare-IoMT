@@ -1,0 +1,61 @@
+# Python environments
+.venv/
+.venv*/
+venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Large data
+data/merged/
+
+# Generated model artifacts
+reports/**/models/
+reports/**/candidates/
+reports/**/stability/
+
+# Logs and caches
+*.log
+*.out
+*.err
+Thesis/*.docx
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.streamlit/
+.npm-cache/
+catboost_info/
+reports/ids_replay_cache/
+tmp/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Bundled runtime demo exceptions
+!reports/ids_replay_cache/
+reports/ids_replay_cache/*
+!reports/ids_replay_cache/catboost_e_demo_subset_62fd97ba1080fb8e.pkl
+
+!reports/full_gpu_hpo_models_20260306_195851_protocol_multimodel_robust_matrix_v1_20260314_112105/candidates/
+reports/full_gpu_hpo_models_20260306_195851_protocol_multimodel_robust_matrix_v1_20260314_112105/candidates/*
+!reports/full_gpu_hpo_models_20260306_195851_protocol_multimodel_robust_matrix_v1_20260314_112105/candidates/coarse_wifi_catboost_E_seed_42/
+!reports/full_gpu_hpo_models_20260306_195851_protocol_multimodel_robust_matrix_v1_20260314_112105/candidates/coarse_mqtt_catboost_E_seed_42/
+!reports/full_gpu_hpo_models_20260306_195851_protocol_multimodel_robust_matrix_v1_20260314_112105/candidates/coarse_bluetooth_catboost_E_seed_42/
+reports/full_gpu_hpo_models_20260306_195851_protocol_multimodel_robust_matrix_v1_20260314_112105/candidates/coarse_wifi_catboost_E_seed_42/*
+reports/full_gpu_hpo_models_20260306_195851_protocol_multimodel_robust_matrix_v1_20260314_112105/candidates/coarse_mqtt_catboost_E_seed_42/*
+reports/full_gpu_hpo_models_20260306_195851_protocol_multimodel_robust_matrix_v1_20260314_112105/candidates/coarse_bluetooth_catboost_E_seed_42/*
+!reports/full_gpu_hpo_models_20260306_195851_protocol_multimodel_robust_matrix_v1_20260314_112105/candidates/coarse_wifi_catboost_E_seed_42/models/
+!reports/full_gpu_hpo_models_20260306_195851_protocol_multimodel_robust_matrix_v1_20260314_112105/candidates/coarse_mqtt_catboost_E_seed_42/models/
+!reports/full_gpu_hpo_models_20260306_195851_protocol_multimodel_robust_matrix_v1_20260314_112105/candidates/coarse_bluetooth_catboost_E_seed_42/models/
+reports/full_gpu_hpo_models_20260306_195851_protocol_multimodel_robust_matrix_v1_20260314_112105/candidates/coarse_wifi_catboost_E_seed_42/models/*
+reports/full_gpu_hpo_models_20260306_195851_protocol_multimodel_robust_matrix_v1_20260314_112105/candidates/coarse_mqtt_catboost_E_seed_42/models/*
+reports/full_gpu_hpo_models_20260306_195851_protocol_multimodel_robust_matrix_v1_20260314_112105/candidates/coarse_bluetooth_catboost_E_seed_42/models/*
+!reports/full_gpu_hpo_models_20260306_195851_protocol_multimodel_robust_matrix_v1_20260314_112105/candidates/coarse_wifi_catboost_E_seed_42/models/wifi__catboost__E.cbm
+!reports/full_gpu_hpo_models_20260306_195851_protocol_multimodel_robust_matrix_v1_20260314_112105/candidates/coarse_mqtt_catboost_E_seed_42/models/mqtt__catboost__E.cbm
+!reports/full_gpu_hpo_models_20260306_195851_protocol_multimodel_robust_matrix_v1_20260314_112105/candidates/coarse_bluetooth_catboost_E_seed_42/models/bluetooth__catboost__E.cbm
+
+# Frontend generated output
+web/ids-react-ui/node_modules/
+web/ids-react-ui/dist/

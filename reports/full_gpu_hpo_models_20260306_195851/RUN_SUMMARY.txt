@@ -1,0 +1,10 @@
+Iterative GPU HPO training completed (individual model per protocol).
+Output directory: /home/capstone15/reports/full_gpu_hpo_models_20260306_195851
+Model selection policy: validation-only objective (no test-based ranking).
+Best model by validation selection score: weighted_ensemble__protocol_routed
+Rows train=5839934 val=1829958 test=1650153
+Protocols=bluetooth,mqtt,wifi
+Features=45
+Capture disjointness: train_unique=99 test_unique=29 overlap=0
+Validation fallback events=3
+Single-class test slice flags=89

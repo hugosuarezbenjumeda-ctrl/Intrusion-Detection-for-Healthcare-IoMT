@@ -1,0 +1,4 @@
+candidate_group_key,model_name,family_id,consistent_gate_pass,num_seeds_checked,any_seed_pass
+catboost__B,catboost,B,False,9,True
+catboost__C,catboost,C,False,9,True
+catboost__E,catboost,E,False,9,True

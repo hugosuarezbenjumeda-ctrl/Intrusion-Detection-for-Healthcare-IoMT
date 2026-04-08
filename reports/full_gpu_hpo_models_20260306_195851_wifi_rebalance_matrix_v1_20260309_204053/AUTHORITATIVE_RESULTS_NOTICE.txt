@@ -1,0 +1,2 @@
+Authoritative: decision_table.csv, stability_check.csv, escalation_recommendation.json.
+Family-level copied metrics_summary*.json/csv are compatibility artifacts from base run.

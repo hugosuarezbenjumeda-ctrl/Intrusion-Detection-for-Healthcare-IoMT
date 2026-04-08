@@ -1,0 +1,208 @@
+{
+  "generated_at": "2026-03-09T00:54:08.755531",
+  "run_dir": "/home/capstone15/reports/full_gpu_hpo_models_20260306_195851",
+  "output_dir": "/home/capstone15/reports/full_gpu_hpo_models_20260306_195851/xgb_robustness_realistic_full_20260308_212054",
+  "files": {
+    "robustness_metrics_global_csv": "/home/capstone15/reports/full_gpu_hpo_models_20260306_195851/xgb_robustness_realistic_full_20260308_212054/robustness_metrics_global.csv",
+    "robustness_metrics_protocol_csv": "/home/capstone15/reports/full_gpu_hpo_models_20260306_195851/xgb_robustness_realistic_full_20260308_212054/robustness_metrics_protocol.csv",
+    "robustness_metrics_by_epsilon_json": "/home/capstone15/reports/full_gpu_hpo_models_20260306_195851/xgb_robustness_realistic_full_20260308_212054/robustness_metrics_by_epsilon.json",
+    "perturbation_stats_csv": "/home/capstone15/reports/full_gpu_hpo_models_20260306_195851/xgb_robustness_realistic_full_20260308_212054/perturbation_stats.csv",
+    "constraints_summary_csv": "/home/capstone15/reports/full_gpu_hpo_models_20260306_195851/xgb_robustness_realistic_full_20260308_212054/constraints_summary.csv",
+    "attack_config_json": "/home/capstone15/reports/full_gpu_hpo_models_20260306_195851/xgb_robustness_realistic_full_20260308_212054/attack_config.json",
+    "robustness_query_metrics_global_csv": "/home/capstone15/reports/full_gpu_hpo_models_20260306_195851/xgb_robustness_realistic_full_20260308_212054/robustness_query_metrics_global.csv",
+    "robustness_query_metrics_protocol_csv": "/home/capstone15/reports/full_gpu_hpo_models_20260306_195851/xgb_robustness_realistic_full_20260308_212054/robustness_query_metrics_protocol.csv",
+    "realism_profile_json": "/home/capstone15/reports/full_gpu_hpo_models_20260306_195851/xgb_robustness_realistic_full_20260308_212054/realism_profile.json",
+    "query_trace_summary_json": "/home/capstone15/reports/full_gpu_hpo_models_20260306_195851/xgb_robustness_realistic_full_20260308_212054/query_trace_summary.json"
+  },
+  "feature_count": 45,
+  "protocols": [
+    "bluetooth",
+    "mqtt",
+    "wifi"
+  ],
+  "xgb_inference_device": "cuda",
+  "train_sampling": {
+    "counts_available": {
+      "wifi": 7086155,
+      "bluetooth": 123235,
+      "mqtt": 460502
+    },
+    "counts_sampled": {
+      "wifi": 200000,
+      "mqtt": 200000,
+      "bluetooth": 123235
+    },
+    "target_per_protocol": 200000,
+    "rows_sampled_total": 523235
+  },
+  "eval_sampling": {
+    "counts_available": {
+      "bluetooth::0": 6671,
+      "bluetooth::1": 25170,
+      "mqtt::1": 63715,
+      "wifi::0": 41737,
+      "wifi::1": 1512860
+    },
+    "counts_sampled": {
+      "bluetooth::0": 6671,
+      "bluetooth::1": 25000,
+      "mqtt::1": 25000,
+      "wifi::0": 25000,
+      "wifi::1": 25000
+    },
+    "sample_attack_per_protocol": 25000,
+    "sample_benign_per_protocol": 25000,
+    "rows_sampled_total": 106671
+  },
+  "surrogate_meta": {
+    "bluetooth": {
+      "n_rows": 123235,
+      "n_pos": 99839,
+      "n_neg": 23396,
+      "single_class": 0
+    },
+    "mqtt": {
+      "n_rows": 200000,
+      "n_pos": 114010,
+      "n_neg": 85990,
+      "single_class": 0
+    },
+    "wifi": {
+      "n_rows": 200000,
+      "n_pos": 189300,
+      "n_neg": 10700,
+      "single_class": 0
+    }
+  },
+  "realistic_eval_sampling": {
+    "counts_available": {
+      "bluetooth::0": 6671,
+      "bluetooth::1": 25170,
+      "mqtt::1": 63715,
+      "wifi::0": 41737,
+      "wifi::1": 1512860
+    },
+    "counts_sampled": {
+      "bluetooth::0": 5000,
+      "bluetooth::1": 5000,
+      "mqtt::1": 5000,
+      "wifi::0": 5000,
+      "wifi::1": 5000
+    },
+    "sample_attack_per_protocol": 5000,
+    "sample_benign_per_protocol": 5000,
+    "rows_sampled_total": 25000
+  },
+  "baseline_global": {
+    "tp": 74473,
+    "tn": 31668,
+    "fp": 3,
+    "fn": 527,
+    "precision": 0.9999597185670551,
+    "recall": 0.9929733333333334,
+    "f1": 0.9964542802857984,
+    "fpr": 9.47238798901203e-05,
+    "n": 106671,
+    "n_benign": 31671,
+    "n_attack": 75000
+  },
+  "baseline_by_protocol": {
+    "bluetooth": {
+      "tp": 24580,
+      "tn": 6671,
+      "fp": 0,
+      "fn": 420,
+      "precision": 1.0,
+      "recall": 0.9832,
+      "f1": 0.9915288422751108,
+      "fpr": 0.0,
+      "n": 31671,
+      "n_benign": 6671,
+      "n_attack": 25000
+    },
+    "mqtt": {
+      "tp": 24924,
+      "tn": 0,
+      "fp": 0,
+      "fn": 76,
+      "precision": 1.0,
+      "recall": 0.99696,
+      "f1": 0.9984776860828458,
+      "fpr": 0.0,
+      "n": 25000,
+      "n_benign": 0,
+      "n_attack": 25000
+    },
+    "wifi": {
+      "tp": 24969,
+      "tn": 24997,
+      "fp": 3,
+      "fn": 31,
+      "precision": 0.9998798654493032,
+      "recall": 0.99876,
+      "f1": 0.9993196189866325,
+      "fpr": 0.00012,
+      "n": 50000,
+      "n_benign": 25000,
+      "n_attack": 25000
+    }
+  },
+  "realistic_query_rows_global": 11,
+  "realistic_query_rows_protocol": 33,
+  "shap_top_features_by_protocol": {
+    "bluetooth": {
+      "features": [
+        "Tot sum",
+        "Tot size",
+        "Max",
+        "Number",
+        "Header_Length"
+      ],
+      "mean_contrib": {
+        "Tot sum": 4.21336030960083,
+        "Tot size": 1.0803343057632446,
+        "Max": 0.6825882196426392,
+        "Number": 0.2636295258998871,
+        "Header_Length": 0.20414084196090698
+      }
+    },
+    "mqtt": {
+      "features": [
+        "Rate",
+        "syn_count",
+        "ack_count",
+        "IAT",
+        "rst_count"
+      ],
+      "mean_contrib": {
+        "Rate": 4.009631156921387,
+        "syn_count": 2.2291970252990723,
+        "ack_count": 1.4133938550949097,
+        "IAT": 1.117234706878662,
+        "rst_count": 1.001944661140442
+      }
+    },
+    "wifi": {
+      "features": [
+        "IAT",
+        "Magnitue",
+        "Tot size",
+        "Number",
+        "Weight"
+      ],
+      "mean_contrib": {
+        "IAT": 3.750217914581299,
+        "Magnitue": 1.797721266746521,
+        "Tot size": 1.5303146839141846,
+        "Number": 0.9223524928092957,
+        "Weight": 0.5952998995780945
+      }
+    }
+  },
+  "notes": [
+    "Robustness evaluation is inference-only; XGBoost models are not retrained.",
+    "Legacy attacks are applied to malicious rows only; benign rows remain unchanged in legacy mode.",
+    "Realistic mode adds query-limited black-box attacks for both malicious evasion and benign-side FPR drift.",
+    "Constraints use train-sampled percentiles with non-negativity projection and locked feature invariants."
+  ]
+}

@@ -1,0 +1,5 @@
+Full-data GPU model training submitted/completed.
+Output directory: /home/capstone15/reports/full_gpu_models_20260306_001638
+Best model by F1: complex_mlp
+Rows train=6136270 val=1533622 test=1650153
+Features=45

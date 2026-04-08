@@ -1,0 +1,188 @@
+{
+  "generated_at": "2026-03-09T10:39:36.263678",
+  "base_run_dir": "C:\\Users\\Hugo\\Desktop\\Thesis\\Medical-IoMT-\\reports\\full_gpu_hpo_models_20260306_195851",
+  "output_run_dir": "C:\\Users\\Hugo\\Desktop\\Thesis\\Medical-IoMT-\\reports\\full_gpu_hpo_models_20260306_195851_wifi_robust_v1_20260309_103936",
+  "trained_device": "cuda",
+  "xgb_booster_inference_device": "cuda",
+  "feature_count": 45,
+  "wifi_hparams": {
+    "n_estimators": 1442,
+    "max_depth": 3,
+    "learning_rate": 0.023461348691795815,
+    "subsample": 0.7344536093744406,
+    "colsample_bytree": 0.6775016601757066,
+    "min_child_weight": 3.2748258933153043,
+    "reg_lambda": 0.0010069130660756251,
+    "reg_alpha": 0.4718982101846842,
+    "gamma": 2.9145995696312266,
+    "max_bin": 256
+  },
+  "split": {
+    "train_rows": 5381938,
+    "val_rows": 1704217,
+    "train_benign_rows": 337761,
+    "val_benign_rows": 43233,
+    "train_benign_sampled": 500,
+    "val_benign_sampled": 200,
+    "fallback_events": []
+  },
+  "hard_negative": {
+    "train_flip_rows": 247,
+    "hardneg_weight": 2.0,
+    "train_campaign_rows": [
+      {
+        "split": "train",
+        "epsilon": 0.05,
+        "targeted_rows": 500,
+        "baseline_false_alarm_rows": 0,
+        "attack_successes_any": 94,
+        "flip_rows": 94,
+        "flip_rate": 0.188,
+        "attacked_pred_attack_rate": 0.188,
+        "queries_total": 13625,
+        "queries_mean": 27.25,
+        "queries_p95": 30.0,
+        "accepted_moves_mean": 1.166,
+        "below_lower_violations": 0,
+        "above_upper_violations": 0,
+        "locked_change_rows": 0,
+        "locked_change_max_abs": 0.0,
+        "cap_violation_rows": 0,
+        "relation_violation_rows": 0,
+        "relation_min_avg_max_rows": 0,
+        "relation_tot_num_avg_rows": 0,
+        "relation_rate_rows": 0
+      },
+      {
+        "split": "train",
+        "epsilon": 0.1,
+        "targeted_rows": 500,
+        "baseline_false_alarm_rows": 0,
+        "attack_successes_any": 153,
+        "flip_rows": 153,
+        "flip_rate": 0.306,
+        "attacked_pred_attack_rate": 0.306,
+        "queries_total": 12857,
+        "queries_mean": 25.714,
+        "queries_p95": 30.0,
+        "accepted_moves_mean": 1.34,
+        "below_lower_violations": 0,
+        "above_upper_violations": 0,
+        "locked_change_rows": 0,
+        "locked_change_max_abs": 0.0,
+        "cap_violation_rows": 1,
+        "relation_violation_rows": 0,
+        "relation_min_avg_max_rows": 0,
+        "relation_tot_num_avg_rows": 0,
+        "relation_rate_rows": 0
+      }
+    ],
+    "val_campaign_rows": [
+      {
+        "split": "val",
+        "epsilon": 0.05,
+        "targeted_rows": 200,
+        "baseline_false_alarm_rows": 1,
+        "attack_successes_any": 6,
+        "flip_rows": 5,
+        "flip_rate": 0.025,
+        "attacked_pred_attack_rate": 0.03,
+        "queries_total": 5914,
+        "queries_mean": 29.57,
+        "queries_p95": 30.0,
+        "accepted_moves_mean": 0.14,
+        "below_lower_violations": 0,
+        "above_upper_violations": 0,
+        "locked_change_rows": 0,
+        "locked_change_max_abs": 0.0,
+        "cap_violation_rows": 0,
+        "relation_violation_rows": 0,
+        "relation_min_avg_max_rows": 0,
+        "relation_tot_num_avg_rows": 0,
+        "relation_rate_rows": 0
+      },
+      {
+        "split": "val",
+        "epsilon": 0.1,
+        "targeted_rows": 200,
+        "baseline_false_alarm_rows": 1,
+        "attack_successes_any": 7,
+        "flip_rows": 6,
+        "flip_rate": 0.03,
+        "attacked_pred_attack_rate": 0.035,
+        "queries_total": 5885,
+        "queries_mean": 29.425,
+        "queries_p95": 30.0,
+        "accepted_moves_mean": 0.14,
+        "below_lower_violations": 0,
+        "above_upper_violations": 0,
+        "locked_change_rows": 0,
+        "locked_change_max_abs": 0.0,
+        "cap_violation_rows": 0,
+        "relation_violation_rows": 0,
+        "relation_min_avg_max_rows": 0,
+        "relation_tot_num_avg_rows": 0,
+        "relation_rate_rows": 0
+      }
+    ]
+  },
+  "thresholds": {
+    "wifi_base": 0.2261005938053131,
+    "wifi_new": 0.3865547164357458,
+    "selection": {
+      "selected_threshold": 0.3865547164357458,
+      "selection_rule": "feasible_min_attacked_fpr_then_max_clean_f1",
+      "selected_metrics": {
+        "threshold": 0.3865547164357458,
+        "clean_f1": 0.9974893538948812,
+        "clean_recall": 0.9950631673754835,
+        "clean_precision": 0.9999274005023885,
+        "clean_fpr": 0.0027756574838664907,
+        "attacked_benign_fpr": 0.005,
+        "recall_shortfall": 0.0,
+        "fallback_objective": 0.9824893538948812
+      },
+      "num_candidates": 121,
+      "num_feasible": 54
+    },
+    "all_protocol_thresholds_new": {
+      "bluetooth": 0.998250424861908,
+      "mqtt": 0.8607712984085083,
+      "wifi": 0.3865547164357458
+    }
+  },
+  "validation_metrics": {
+    "clean_old_threshold": {
+      "tp": 1653411,
+      "tn": 42954,
+      "fp": 279,
+      "fn": 7573,
+      "precision": 0.9998312863958783,
+      "recall": 0.9954406544554313,
+      "f1": 0.9976311395932149,
+      "fpr": 0.006453403649989592
+    },
+    "clean_new_threshold": {
+      "tp": 1652784,
+      "tn": 43113,
+      "fp": 120,
+      "fn": 8200,
+      "precision": 0.9999274005023885,
+      "recall": 0.9950631673754835,
+      "f1": 0.9974893538948812,
+      "fpr": 0.0027756574838664907
+    },
+    "attacked_benign_fpr_old_threshold": 0.02,
+    "attacked_benign_fpr_new_threshold": 0.005,
+    "delta_clean_f1": -0.00014178569833367405,
+    "delta_clean_recall": -0.0003774870799477803
+  },
+  "files": {
+    "wifi_model": "C:\\Users\\Hugo\\Desktop\\Thesis\\Medical-IoMT-\\reports\\full_gpu_hpo_models_20260306_195851_wifi_robust_v1_20260309_103936\\models\\wifi__xgboost_tuned.json",
+    "thresholds_by_protocol": "C:\\Users\\Hugo\\Desktop\\Thesis\\Medical-IoMT-\\reports\\full_gpu_hpo_models_20260306_195851_wifi_robust_v1_20260309_103936\\thresholds_by_protocol.json",
+    "hard_negative_stats_csv": "C:\\Users\\Hugo\\Desktop\\Thesis\\Medical-IoMT-\\reports\\full_gpu_hpo_models_20260306_195851_wifi_robust_v1_20260309_103936\\hard_negative_stats.csv",
+    "hard_negative_preview_csv": "C:\\Users\\Hugo\\Desktop\\Thesis\\Medical-IoMT-\\reports\\full_gpu_hpo_models_20260306_195851_wifi_robust_v1_20260309_103936\\hard_negative_preview.csv",
+    "hardening_constraints_summary_csv": "C:\\Users\\Hugo\\Desktop\\Thesis\\Medical-IoMT-\\reports\\full_gpu_hpo_models_20260306_195851_wifi_robust_v1_20260309_103936\\hardening_constraints_summary.csv",
+    "hardening_realism_profile_json": "C:\\Users\\Hugo\\Desktop\\Thesis\\Medical-IoMT-\\reports\\full_gpu_hpo_models_20260306_195851_wifi_robust_v1_20260309_103936\\hardening_realism_profile.json"
+  }
+}

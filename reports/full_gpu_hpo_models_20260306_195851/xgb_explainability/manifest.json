@@ -1,0 +1,13 @@
+{
+  "kind": "xgb_protocol_explainability_bundle",
+  "version": 1,
+  "generated_at": "2026-03-07T12:57:57.785806",
+  "run_dir": "reports\\full_gpu_hpo_models_20260306_195851",
+  "files": {
+    "global_feature_importance_csv": "reports\\full_gpu_hpo_models_20260306_195851\\xgb_explainability\\global_feature_importance.csv",
+    "local_case_summary_csv": "reports\\full_gpu_hpo_models_20260306_195851\\xgb_explainability\\local_case_summary.csv",
+    "local_case_contributions_csv": "reports\\full_gpu_hpo_models_20260306_195851\\xgb_explainability\\local_case_contributions.csv",
+    "local_case_reference_rows_csv": "reports\\full_gpu_hpo_models_20260306_195851\\xgb_explainability\\local_case_reference_rows.csv",
+    "reference_rows_csv": "reports\\full_gpu_hpo_models_20260306_195851\\xgb_explainability\\reference_rows.csv"
+  }
+}

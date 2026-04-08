@@ -1,0 +1,5 @@
+Baseline training (stdlib) completed
+Output directory: /home/capstone15/reports/baseline_models_stdlib_20260305_234858
+Best model by F1: logistic_sgd
+Rows: train=10000 val=4000 test=14000
+Feature count: 45

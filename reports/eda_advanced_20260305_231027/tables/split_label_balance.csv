@@ -1,0 +1,3 @@
+split,rows,benign_rows,attack_rows,benign_ratio,attack_ratio
+train,7669892,601954,7067938,0.078483,0.921517
+test,1650153,48408,1601745,0.029335,0.970665

@@ -1,0 +1,76 @@
+{
+  "relation_quantile_low": 0.01,
+  "relation_quantile_high": 0.99,
+  "relation_feature_indices": {
+    "min": 33,
+    "avg": 35,
+    "max": 34,
+    "tot_sum": 32,
+    "number": 39,
+    "srate": 4,
+    "drate": 5,
+    "rate": 3
+  },
+  "relative_cap": {
+    "default": 0.2,
+    "rate_group": null,
+    "size_group": null,
+    "time_group": null
+  },
+  "protocols": {
+    "bluetooth": {
+      "rows_used": 123235,
+      "locked_features": 32,
+      "mutable_features": 13,
+      "min_avg_max_enabled": 1,
+      "ratio_tot_num_avg": {
+        "enabled": 1,
+        "low": 0.9999994451006295,
+        "high": 1.00000011919619,
+        "valid_rows": 123235
+      },
+      "ratio_rate": {
+        "enabled": 1,
+        "low": 0.99999999895,
+        "high": 1.00000000105,
+        "valid_rows": 123235
+      }
+    },
+    "mqtt": {
+      "rows_used": 200000,
+      "locked_features": 24,
+      "mutable_features": 21,
+      "min_avg_max_enabled": 1,
+      "ratio_tot_num_avg": {
+        "enabled": 1,
+        "low": 0.9214098751090152,
+        "high": 1.2405058230701065,
+        "valid_rows": 200000
+      },
+      "ratio_rate": {
+        "enabled": 1,
+        "low": 0.99999999895,
+        "high": 1.00000000105,
+        "valid_rows": 199997
+      }
+    },
+    "wifi": {
+      "rows_used": 200000,
+      "locked_features": 24,
+      "mutable_features": 20,
+      "min_avg_max_enabled": 1,
+      "ratio_tot_num_avg": {
+        "enabled": 1,
+        "low": 0.9781933115265612,
+        "high": 1.1756123143262434,
+        "valid_rows": 200000
+      },
+      "ratio_rate": {
+        "enabled": 1,
+        "low": 0.99999999895,
+        "high": 1.00000000105,
+        "valid_rows": 192849
+      }
+    }
+  }
+}

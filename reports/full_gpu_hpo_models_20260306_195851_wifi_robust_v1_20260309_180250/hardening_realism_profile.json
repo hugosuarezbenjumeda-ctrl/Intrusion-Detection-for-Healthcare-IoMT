@@ -1,0 +1,40 @@
+{
+  "relation_quantile_low": 0.01,
+  "relation_quantile_high": 0.99,
+  "relation_feature_indices": {
+    "min": 33,
+    "avg": 35,
+    "max": 34,
+    "tot_sum": 32,
+    "number": 39,
+    "srate": 4,
+    "drate": 5,
+    "rate": 3
+  },
+  "relative_cap": {
+    "default": 0.2,
+    "rate_group": null,
+    "size_group": null,
+    "time_group": null
+  },
+  "protocols": {
+    "wifi": {
+      "rows_used": 200000,
+      "locked_features": 24,
+      "mutable_features": 20,
+      "min_avg_max_enabled": 1,
+      "ratio_tot_num_avg": {
+        "enabled": 1,
+        "low": 0.9756533195588641,
+        "high": 1.1765764459895862,
+        "valid_rows": 200000
+      },
+      "ratio_rate": {
+        "enabled": 1,
+        "low": 0.99999999895,
+        "high": 1.00000000105,
+        "valid_rows": 192892
+      }
+    }
+  }
+}

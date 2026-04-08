@@ -1,0 +1,8 @@
+{
+  "enabled": 0,
+  "external_csvs": [],
+  "rows_raw": 0,
+  "rows_kept": 0,
+  "rows_dropped_non_benign_or_protocol": 0,
+  "rows_dropped_overlap": 0
+}

@@ -1,0 +1,50 @@
+{
+  "generated_at": "2026-03-07T12:57:57.785806",
+  "run_dir": "reports\\full_gpu_hpo_models_20260306_195851",
+  "output_dir": "reports\\full_gpu_hpo_models_20260306_195851\\xgb_explainability",
+  "test_csv": "data\\merged\\metadata_test.csv",
+  "rows_processed": 1650153,
+  "protocols": [
+    "bluetooth",
+    "mqtt",
+    "wifi"
+  ],
+  "default_protocol": "wifi",
+  "feature_count": 45,
+  "thresholds_by_protocol": {
+    "bluetooth": 0.998250424861908,
+    "mqtt": 0.8607712984085083,
+    "wifi": 0.2261005938053131
+  },
+  "global_sample_count_by_protocol": {
+    "bluetooth": 4096,
+    "mqtt": 4096,
+    "wifi": 4096
+  },
+  "reference_rows_by_protocol": {
+    "bluetooth": 200,
+    "mqtt": 200,
+    "wifi": 200
+  },
+  "cases_by_protocol_outcome": {
+    "bluetooth::TP": 4,
+    "bluetooth::TN": 4,
+    "bluetooth::FP": 0,
+    "bluetooth::FN": 4,
+    "mqtt::TP": 4,
+    "mqtt::TN": 0,
+    "mqtt::FP": 0,
+    "mqtt::FN": 4,
+    "wifi::TP": 4,
+    "wifi::TN": 4,
+    "wifi::FP": 4,
+    "wifi::FN": 4
+  },
+  "files": {
+    "global_feature_importance_csv": "reports\\full_gpu_hpo_models_20260306_195851\\xgb_explainability\\global_feature_importance.csv",
+    "local_case_summary_csv": "reports\\full_gpu_hpo_models_20260306_195851\\xgb_explainability\\local_case_summary.csv",
+    "local_case_contributions_csv": "reports\\full_gpu_hpo_models_20260306_195851\\xgb_explainability\\local_case_contributions.csv",
+    "local_case_reference_rows_csv": "reports\\full_gpu_hpo_models_20260306_195851\\xgb_explainability\\local_case_reference_rows.csv",
+    "reference_rows_csv": "reports\\full_gpu_hpo_models_20260306_195851\\xgb_explainability\\reference_rows.csv"
+  }
+}

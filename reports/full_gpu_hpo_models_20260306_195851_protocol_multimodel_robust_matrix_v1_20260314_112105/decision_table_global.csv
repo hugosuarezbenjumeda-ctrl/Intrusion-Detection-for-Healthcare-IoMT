@@ -1,0 +1,11 @@
+candidate_key,candidate_group_key,model_name,family_id,seed,protocols_present,has_all_protocols,gate_pass,gate_failure_category,worst_attacked_benign_fpr,worst_clean_fpr,worst_adv_malicious_recall,mean_clean_f1,mean_robust_f1,final_rank
+xgboost__A__42,xgboost__A,xgboost,A,42,"bluetooth,mqtt,wifi",True,True,none,0.0,0.0,0.9918243026611093,0.9979889981694599,0.9985333170861704,1
+xgboost__C__42,xgboost__C,xgboost,C,42,"bluetooth,mqtt,wifi",True,True,none,0.0,0.0,0.991503687079192,0.9977957989983365,0.9979861905948134,2
+xgboost__B__42,xgboost__B,xgboost,B,42,"bluetooth,mqtt,wifi",True,True,none,0.0,0.0,0.991503687079192,0.9971529850174661,0.9972435848513524,3
+xgboost__D__42,xgboost__D,xgboost,D,42,"bluetooth,mqtt,wifi",True,True,none,0.0,0.0,0.9911830714972748,0.997976653546712,0.9982777117591741,4
+xgboost__E__42,xgboost__E,xgboost,E,42,"bluetooth,mqtt,wifi",True,True,none,0.0,0.0,0.9911830714972748,0.9974423113329772,0.9978334654378402,5
+catboost__E__42,catboost__E,catboost,E,42,"bluetooth,mqtt,wifi",True,True,none,0.0,5.307714763408614e-05,0.9923052260339853,0.9968848300158535,0.997527048031397,6
+catboost__D__42,catboost__D,catboost,D,42,"bluetooth,mqtt,wifi",True,True,none,0.0,5.307714763408614e-05,0.9918243026611093,0.9970306505621088,0.9976444289751146,7
+catboost__B__42,catboost__B,catboost,B,42,"bluetooth,mqtt,wifi",True,True,none,0.0,5.307714763408614e-05,0.9911830714972748,0.9970874649031418,0.9974871216205413,8
+catboost__C__42,catboost__C,catboost,C,42,"bluetooth,mqtt,wifi",True,True,none,0.0,5.307714763408614e-05,0.990253987005316,0.9964934513934168,0.997107217409587,9
+catboost__A__42,catboost__A,catboost,A,42,"bluetooth,mqtt,wifi",True,True,none,0.0001326963906581741,0.00010615429526817229,0.9924655338249438,0.9971897629506602,0.9979008705910526,10

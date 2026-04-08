@@ -1,0 +1,164 @@
+{
+  "generated_at_epoch_sec": 1773604584.6186354,
+  "elapsed_sec": 196.25484251976013,
+  "selection_mode": "guarded",
+  "base_run_dir": "C:\\Users\\Hugo\\Desktop\\Thesis\\Medical-IoMT-\\reports\\full_gpu_hpo_models_20260306_195851",
+  "matrix_run_dir": "C:\\Users\\Hugo\\Desktop\\Thesis\\Medical-IoMT-\\reports\\full_gpu_hpo_models_20260306_195851_protocol_multimodel_robust_matrix_v1_20260314_112105",
+  "train_csv": "C:\\Users\\Hugo\\Desktop\\Thesis\\Medical-IoMT-\\data\\merged\\metadata_train.csv",
+  "test_csv": "C:\\Users\\Hugo\\Desktop\\Thesis\\Medical-IoMT-\\data\\merged\\metadata_test.csv",
+  "model_name": "catboost",
+  "family_id": "E",
+  "stage_name": "coarse",
+  "seed": 42,
+  "protocols": [
+    "wifi",
+    "mqtt",
+    "bluetooth"
+  ],
+  "base_thresholds": {
+    "wifi": 0.9066666667657811,
+    "mqtt": 0.9666666583331858,
+    "bluetooth": 0.8800000753780836
+  },
+  "threshold_deltas": [
+    -0.02,
+    -0.01,
+    -0.005,
+    0.0,
+    0.005,
+    0.01,
+    0.02
+  ],
+  "threshold_grid": {
+    "wifi": [
+      0.8866666667657811,
+      0.8966666667657811,
+      0.9016666667657811,
+      0.9066666667657811,
+      0.9116666667657811,
+      0.9166666667657811,
+      0.9266666667657811
+    ],
+    "mqtt": [
+      0.9466666583331858,
+      0.9566666583331858,
+      0.9616666583331858,
+      0.9666666583331858,
+      0.9716666583331858,
+      0.9766666583331858,
+      0.9866666583331858
+    ],
+    "bluetooth": [
+      0.8600000753780835,
+      0.8700000753780835,
+      0.8750000753780836,
+      0.8800000753780836,
+      0.8850000753780836,
+      0.8900000753780836,
+      0.9000000753780836
+    ]
+  },
+  "attack_methods": [
+    "surrogate_fgsm",
+    "surrogate_pgd"
+  ],
+  "epsilons": [
+    0.0,
+    0.01,
+    0.02,
+    0.05,
+    0.1
+  ],
+  "attack_eval_keys": [
+    "surrogate_fgsm@0.01",
+    "surrogate_fgsm@0.02",
+    "surrogate_fgsm@0.05",
+    "surrogate_fgsm@0.1",
+    "surrogate_pgd@0.01",
+    "surrogate_pgd@0.02",
+    "surrogate_pgd@0.05",
+    "surrogate_pgd@0.1"
+  ],
+  "guards": {
+    "max_clean_fpr_increase": 0.0,
+    "max_attacked_benign_fpr_increase": 0.0,
+    "max_adv_recall_drop": 0.002,
+    "max_robust_f1_drop": 0.002
+  },
+  "baseline": {
+    "policy": "baseline_thresholds",
+    "wifi_threshold": 0.9066666667657811,
+    "mqtt_threshold": 0.9666666583331858,
+    "bluetooth_threshold": 0.8800000753780836,
+    "clean_precision": 0.9999924927789918,
+    "clean_recall": 0.9979422442398759,
+    "clean_f1": 0.9989663165433726,
+    "clean_fpr": 0.00024789291026276647,
+    "attacked_benign_fpr": 0.00024789291026276647,
+    "adv_malicious_recall": 0.9587343803164674,
+    "robust_f1": 0.9789287643769293,
+    "worst_attacked_benign_fpr_key": "surrogate_fgsm@eps=0.01",
+    "worst_adv_recall_key": "surrogate_pgd@eps=0.1",
+    "worst_robust_f1_key": "surrogate_pgd@eps=0.1",
+    "guard_pass": 1,
+    "selection_mode": "reference"
+  },
+  "tuned": {
+    "policy": "tuned_thresholds",
+    "wifi_threshold": 0.8966666667657811,
+    "mqtt_threshold": 0.9466666583331858,
+    "bluetooth_threshold": 0.8700000753780835,
+    "clean_precision": 0.9999924931030384,
+    "clean_recall": 0.9979853222579125,
+    "clean_f1": 0.9989878994773886,
+    "clean_fpr": 0.00024789291026276647,
+    "attacked_benign_fpr": 0.00024789291026276647,
+    "adv_malicious_recall": 0.958807425651399,
+    "robust_f1": 0.978966840710599,
+    "worst_attacked_benign_fpr_key": "surrogate_fgsm@eps=0.01",
+    "worst_adv_recall_key": "surrogate_pgd@eps=0.1",
+    "worst_robust_f1_key": "surrogate_pgd@eps=0.1",
+    "guard_pass": 1,
+    "selection_mode": "guarded"
+  },
+  "train_sample_meta": {
+    "counts_available": {
+      "bluetooth": 123235,
+      "wifi": 7086155,
+      "mqtt": 460502
+    },
+    "counts_sampled": {
+      "wifi": 200000,
+      "mqtt": 200000,
+      "bluetooth": 123235
+    },
+    "target_per_protocol": 200000,
+    "rows_sampled_total": 523235
+  },
+  "surrogate_meta": {
+    "wifi": {
+      "n_rows": 200000,
+      "n_pos": 189300,
+      "n_neg": 10700,
+      "single_class": 0
+    },
+    "mqtt": {
+      "n_rows": 200000,
+      "n_pos": 114010,
+      "n_neg": 85990,
+      "single_class": 0
+    },
+    "bluetooth": {
+      "n_rows": 123235,
+      "n_pos": 99839,
+      "n_neg": 23396,
+      "single_class": 0
+    }
+  },
+  "files": {
+    "candidates_csv": "C:\\Users\\Hugo\\Desktop\\Thesis\\Medical-IoMT-\\reports\\full_gpu_hpo_models_20260306_195851_protocol_multimodel_robust_matrix_v1_20260314_112105\\catboost_E_threshold_tiny_tune_surrogate_guard_candidates.csv",
+    "summary_csv": "C:\\Users\\Hugo\\Desktop\\Thesis\\Medical-IoMT-\\reports\\full_gpu_hpo_models_20260306_195851_protocol_multimodel_robust_matrix_v1_20260314_112105\\catboost_E_threshold_tiny_tune_surrogate_guard_summary.csv",
+    "attack_compare_csv": "C:\\Users\\Hugo\\Desktop\\Thesis\\Medical-IoMT-\\reports\\full_gpu_hpo_models_20260306_195851_protocol_multimodel_robust_matrix_v1_20260314_112105\\catboost_E_threshold_tiny_tune_surrogate_guard_attack_compare.csv",
+    "manifest_json": "C:\\Users\\Hugo\\Desktop\\Thesis\\Medical-IoMT-\\reports\\full_gpu_hpo_models_20260306_195851_protocol_multimodel_robust_matrix_v1_20260314_112105\\catboost_E_threshold_tiny_tune_surrogate_guard_manifest.json"
+  }
+}

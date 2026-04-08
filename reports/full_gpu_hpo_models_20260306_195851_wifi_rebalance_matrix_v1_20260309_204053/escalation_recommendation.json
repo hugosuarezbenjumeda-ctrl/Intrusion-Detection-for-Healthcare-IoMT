@@ -1,0 +1,5 @@
+{
+  "triggered": 1,
+  "reason": "winner_not_stable",
+  "recommendation": "add_benign_external_data_then_rerun_same_gate_profile"
+}

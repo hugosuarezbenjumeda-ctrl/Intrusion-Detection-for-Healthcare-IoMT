@@ -1,0 +1,23 @@
+{
+  "train_rows": 7669892,
+  "test_rows": 1650153,
+  "train_label_counts": {
+    "benign": 601954,
+    "attack": 7067938
+  },
+  "test_label_counts": {
+    "benign": 48408,
+    "attack": 1601745
+  },
+  "train_protocol_counts": {
+    "bluetooth": 123235,
+    "wifi": 7086155,
+    "mqtt": 460502
+  },
+  "test_protocol_counts": {
+    "bluetooth": 31841,
+    "mqtt": 63715,
+    "wifi": 1554597
+  },
+  "feature_count": 45
+}

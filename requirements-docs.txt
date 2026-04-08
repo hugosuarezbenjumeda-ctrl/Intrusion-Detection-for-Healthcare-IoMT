@@ -1,0 +1,5 @@
+# Thesis/document generation
+python-docx==1.2.0
+
+# Notebook support for the retained EDA workflow
+jupyter

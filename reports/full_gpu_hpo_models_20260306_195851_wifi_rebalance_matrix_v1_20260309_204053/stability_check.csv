@@ -1,0 +1,3 @@
+seed,family_id,family_name,gate_pass,clean_fpr,attacked_benign_fpr,adv_malicious_recall,source
+42,A,fpr_priority,True,0.0037471376032197625,0.0035,0.99,matrix_primary
+43,A,fpr_priority,False,0.0,0.0,0.447,stability_rerun

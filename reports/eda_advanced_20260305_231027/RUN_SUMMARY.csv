@@ -1,0 +1,15 @@
+key,value
+output_dir,/home/capstone15/reports/eda_advanced_20260305_231027
+total_rows,9320045
+attack_rows,8669683
+benign_rows,650362
+attack_share,0.930219006453295
+benign_share,0.06978099354670497
+sampled_benign_rows,3913
+sampled_attack_rows,51879
+top_protocols,"[('wifi', 8640752), ('mqtt', 524217), ('bluetooth', 155076)]"
+top_families,"[('DDoS', 6097614), ('DoS', 2290990), ('Benign', 650362), ('Recon', 131402), ('Other', 125009)]"
+top_attack_names,"[('TCP_IP-DDoS-UDP1', 411824), ('TCP_IP-DDoS-ICMP2', 390510), ('TCP_IP-DDoS-UDP2', 363711), ('TCP_IP-DDoS-ICMP1', 348945), ('MQTT-DDoS-Connect_Flood', 214952)]"
+top_features_by_abs_d,"['psh_flag_number', 'Variance', 'rst_count', 'ack_flag_number', 'Max', 'Magnitue', 'Std', 'Radius']"
+dominant_family,DDoS
+dominant_family_share,0.6542472702653259

@@ -1,0 +1,4 @@
+candidate_key,model_name,family_id,seed,protocols_present,has_all_protocols,gate_pass,gate_failure_category,worst_attacked_benign_fpr,worst_clean_fpr,worst_adv_malicious_recall,mean_clean_f1,mean_robust_f1,final_rank
+xgboost__A__123,xgboost,A,123,wifi,True,False,adv_recall_only,0.0,0.0,0.96875,0.9958791208791209,0.9841269841269841,1
+xgboost__B__123,xgboost,B,123,wifi,True,False,adv_recall_only,0.0,0.0,0.96875,0.9929395557086275,0.9841269841269841,2
+xgboost__C__123,xgboost,C,123,wifi,True,False,adv_recall_only,0.0,0.0,0.96875,0.9929395557086275,0.9841269841269841,3
