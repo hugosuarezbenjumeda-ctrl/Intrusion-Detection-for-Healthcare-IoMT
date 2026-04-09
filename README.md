@@ -151,7 +151,7 @@ It includes packages used across the retained scripts, including:
 `requirements-docs.txt` adds the extra packages needed for:
 
 - `scripts/generate_advanced_eda_report.ipynb`
-- optional document-export tooling used outside this trimmed repo
+- optional document-export tooling used outside this repository
 
 It currently contains:
 
@@ -275,7 +275,7 @@ The retained materials in this repository reflect the progression from:
 7. final protocol-wise robust model selection
 8. final CatBoost-E evaluation and thesis table export
 
-The most important thesis-facing material in this trimmed repo is concentrated in:
+The most important thesis-facing material in this repository is concentrated in:
 
 - `reports/`
 - [ARTIFACT_MAP.md](ARTIFACT_MAP.md)
@@ -498,7 +498,7 @@ If needed, the shorter operational version is in [UI_RUNTIME_README.md](UI_RUNTI
 
 This repository keeps the notebook and document-related dependencies needed for the retained EDA workflow and related export tooling.
 
-The thesis assembly scripts themselves are not part of this trimmed repository. The evidence base they were derived from remains here under `reports/` and is mapped in [ARTIFACT_MAP.md](ARTIFACT_MAP.md).
+The thesis assembly scripts themselves are not part of this repository. The evidence base they were derived from remains here under `reports/` and is mapped in [ARTIFACT_MAP.md](ARTIFACT_MAP.md).
 
 ## How To Run The Retained Tests
 
