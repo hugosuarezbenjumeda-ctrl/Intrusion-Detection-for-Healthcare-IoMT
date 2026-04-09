@@ -1,34 +1,33 @@
-# Medical-IoMT Thesis Evidence Repository
+# Medical-IoMT IDS Training and Validation Pipeline
 
-This repository is intended for a reader who is checking the work reported in the thesis. Its purpose is to show:
+This repository contains the code, retained artifacts, and runnable demo associated with the thesis *Intrusion Detection for Healthcare IoMT: A Flow-Based, Explainable, and Robust Machine Learning Approach*.
 
-1. what was built
-2. what scripts were used
-3. what saved artifacts support the claims and tables in the thesis
-4. how to run the retained runnable parts of the project
+It should be read as a flow-based machine learning pipeline for intrusion detection in Internet of Medical Things (IoMT) environments. Using the CICIoMT2024 dataset, the pipeline constructs merged train/test data, performs exploratory analysis, trains baseline and GPU models, tunes routed protocol-specific models, evaluates explainability and adversarial robustness, applies WiFi hardening and protocol-wise robust model selection, and exports the final thesis tables. The final retained system is a CatBoost-E based IDS configuration selected under the same priorities stated in the thesis: strong classification performance together with low false positive rate, explainability, robustness, stability, and operational usability.
 
-The repository is therefore organized as an evidence-and-inspection package, not as a full raw-data archive.
+For a thesis reviewer, this repository also functions as the inspection package for the reported work. It shows what was built, which scripts implement each stage, which saved artifacts support the claims and tables, and what can still be run directly from this repository.
 
 ## What This Repository Is For
 
-If you are reviewing the thesis, this repository should let you do three things:
+This repository is meant to support two closely related uses.
 
-1. inspect the retained scripts, reports, and thesis-source files
-2. trace major claims and appendix tables back to concrete artifacts
-3. run the final CatBoost-E operations demo from this repository
+1. understand the end-to-end IoMT IDS pipeline used in the thesis
+2. inspect the retained evidence that supports the reported methodology and results
+3. run the retained CatBoost-E operations demo from this repository
 
-It does not contain the full raw dataset or every intermediate model tree, because many of those files are too large or too noisy for a normal GitHub repository.
+If the dataset is available locally under `data/ciciomt2024/` and the merged outputs are available under `data/merged/`, the repository can also be used as a local training and evaluation pipeline for the main model-development stages.
+
+The GitHub-oriented form of the repository does not usually include the full raw dataset or every intermediate model tree, because many of those files are too large or too noisy for a normal GitHub repository. A local submission copy can include those data folders.
 
 ## Suggested Review Order
 
 If you want to check the project from top to bottom, use this order:
 
 1. Read this file.
-2. Open [ARTIFACT_MAP.md](ARTIFACT_MAP.md).
-3. Inspect the report folders listed in the evidence sections below.
-4. If you want to see the final system running, follow the `How To Run The Final Demo` section.
+2. Read the `Workflow Summary` section below to see the pipeline stages.
+3. Open [ARTIFACT_MAP.md](ARTIFACT_MAP.md).
+4. Inspect the report folders listed in the evidence sections below.
+5. If you want to see the final system running, follow the `How To Run The Final Demo` section.
 
-The thesis-facing narrative markdown files and generator scripts were moved to the companion working repository and are not retained in this trimmed evidence repo.
 
 ## Repository Structure
 
@@ -106,13 +105,14 @@ In practice, the critical extra dependency is:
 
 `requirements-docs.txt` also includes `jupyter`, because the retained EDA workflow is notebook-based.
 
-### Case 4. Run The Notebook, Streamlit UI, Or Heavier Training Scripts
+### Case 4. Run The Training And Evaluation Pipeline
 
-To run more than the bundled demo, the reader will usually need:
+To run the main training and evaluation pipeline rather than only the bundled demo, the reader will usually need:
 
 - the packages in `requirements-core.txt`
-- the packages in `requirements-docs.txt` if they want the notebook or thesis generators
-- the omitted merged CSV files under `data/merged/`
+- the packages in `requirements-docs.txt` if they want the notebook tooling
+- the merged CSV files under `data/merged/`
+- usually the raw or extracted dataset under `data/ciciomt2024/`
 - in some cases, a GPU-capable or HPC-style environment
 
 This applies especially to:
@@ -242,16 +242,16 @@ Needed:
 
 This repository includes:
 
-- thesis chapter source files and generator scripts
 - core scripts used across the project pipeline
 - retained reports and result tables used in the thesis
 - the final CatBoost-E operations demo
 - the three final CatBoost-E model binaries needed by the bundled demo
 - a prebuilt replay cache so the demo can run without the omitted multi-GB merged CSV files
+- documentation that maps pipeline stages and thesis claims to retained artifacts
 
 ## What Is Omitted
 
-This repository intentionally does not include:
+The GitHub-oriented version of this repository intentionally does not usually include:
 
 - `data/merged/metadata_train.csv`
 - `data/merged/metadata_test.csv`
@@ -260,11 +260,13 @@ This repository intentionally does not include:
 - most candidate and stability subtrees from the final robust-matrix run
 - logs, temporary outputs, `node_modules`, and generated frontend build output
 
-These omissions are deliberate. The aim is to keep the repository focused on verifiable evidence and runnable retained components, without adding large or low-signal clutter.
+These omissions are deliberate in the public repository form. The local submission version can include the data folders needed to run more of the pipeline end to end.
 
 ## Context For The Work
 
-The project concerns intrusion detection for medical IoMT traffic. The retained materials in this repository reflect the progression from:
+The project concerns intrusion detection for medical IoMT traffic under realistic deployment constraints. In line with the thesis framing, the pipeline prioritizes not only predictive performance, but also low false positive rate, explainability, robustness against adversarial degradation, and operational usability.
+
+The retained materials in this repository reflect the progression from:
 
 1. merged metadata-aware train/test construction
 2. exploratory data analysis
@@ -290,7 +292,7 @@ Open:
 
 This file is the quickest way to connect thesis claims and appendix tables to the scripts and retained outputs that support them.
 
-### 3. Code Used In The Project
+### 2. Core Pipeline Code
 
 The main project scripts are under:
 
@@ -314,7 +316,7 @@ The most important ones for Chapters 3 and 4 are:
 - `scripts/tune_catboost_E_thresholds_surrogate_guard.py`
 - `scripts/export_catboost_E_tuned_thesis_tables.py`
 
-### 4. Saved Outputs Supporting The Thesis
+### 3. Saved Outputs Supporting The Thesis
 
 The retained evidence is under:
 
@@ -441,16 +443,6 @@ This folder contains, among other outputs:
 - threshold-retuning results
 - thesis-exported tables
 
-### Phase 9. Thesis Assembly
-
-Status:
-
-- the thesis-assembly generators were moved to the companion working repository and are not included in this trimmed evidence repo
-
-Purpose:
-
-- the retained reports in this repository are the artifact base those thesis-facing documents were generated from
-
 ## How To Run The Final Demo
 
 The repository includes a runnable version of the final CatBoost-E operations console.
@@ -504,11 +496,11 @@ Then open:
 
 If needed, the shorter operational version is in [UI_RUNTIME_README.md](UI_RUNTIME_README.md).
 
-## Thesis Generator Status
+## Document Tooling Status
 
-The thesis-facing generator scripts are no longer included in this trimmed evidence repository.
+This repository keeps the notebook and document-related dependencies needed for the retained EDA workflow and related export tooling.
 
-`requirements-docs.txt` is still kept for the notebook stack and related document-export tooling used in the companion working repository.
+The thesis assembly scripts themselves are not part of this trimmed repository. The evidence base they were derived from remains here under `reports/` and is mapped in [ARTIFACT_MAP.md](ARTIFACT_MAP.md).
 
 ## How To Run The Retained Tests
 
@@ -522,11 +514,18 @@ These tests cover retained robustness-related logic, not the entire original res
 
 ## Data Notes
 
-The merged CSV files used by training and some evaluation stages are intentionally not committed because they are too large for normal GitHub storage.
+The full pipeline expects a local dataset root and merged train/test outputs.
 
 The upstream dataset used for this project can be obtained from:
 
 - `https://www.kaggle.com/datasets/cyberdeeplearning/ciciomt2024`
+
+If someone wants to keep that dataset locally inside this repository, the intended local locations are:
+
+- `data/ciciomt2024/` for the raw download or extracted dataset root
+- `data/merged/` for the merged outputs created from it
+
+In the GitHub-oriented version of the repository, these large data folders are intentionally ignored by Git so they can exist in a working clone without being pushed. In a local submission copy, those folders can be populated directly.
 
 Those expected local files are:
 
@@ -539,13 +538,13 @@ The merge logic is already included in this repository as:
 
 That single script creates both merged outputs above; there are not separate train and test merge scripts.
 
-If someone wants to rebuild data-dependent stages, they should consult:
+If someone wants to run the data-dependent stages of the pipeline, they should consult:
 
 - `data/README.md`
 - `external/IoT-Healthcare-Security-Dataset/README.md`
 - `scripts/merge_ciciomt_with_metadata.py`
 
-Again, those omitted merged files are not needed to run the bundled demo.
+The bundled demo is the exception: it does not need those merged CSV files because it uses the prebuilt replay cache under `reports/ids_replay_cache/`.
 
 ## Long-Running Jobs
 
@@ -565,7 +564,7 @@ This is mainly relevant for:
 
 ## Reproducibility Notes
 
-This repository is strong on evidence and traceability, but only partial on exact environment reconstruction.
+This repository is strong on evidence and traceability, and it can also serve as a practical local pipeline when the dataset is present under the `data/` locations described above. Exact environment reconstruction is still only partial.
 
 What a reviewer can verify directly from this clone:
 
@@ -574,7 +573,7 @@ What a reviewer can verify directly from this clone:
 - the mapping from thesis claims and appendix tables to concrete files
 - the final bundled CatBoost-E demo
 
-What is not fully self-contained here:
+What is not always fully self-contained in the GitHub-oriented version:
 
 - rebuilding the merged data from raw archives without external data access
 - rerunning the full thesis pipeline without the omitted large files
