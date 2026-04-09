@@ -45,8 +45,6 @@ This is where the main parts of the project are located:
   Saved outputs from the retained runs that support the thesis.
 - `data/`
   Notes about omitted data files and expected local locations.
-- `external/`
-  Upstream dataset notes, provenance material, and licensing information.
 - `web/ids-react-ui/`
   React frontend for the final IDS operations console.
 - `start_ids_realtime_api.bat`
@@ -541,7 +539,6 @@ That single script creates both merged outputs above; there are not separate tra
 If someone wants to run the data-dependent stages of the pipeline, they should consult:
 
 - `data/README.md`
-- `external/IoT-Healthcare-Security-Dataset/README.md`
 - `scripts/merge_ciciomt_with_metadata.py`
 
 The bundled demo is the exception: it does not need those merged CSV files because it uses the prebuilt replay cache under `reports/ids_replay_cache/`.
@@ -591,7 +588,6 @@ Package note:
 - [UI_RUNTIME_README.md](UI_RUNTIME_README.md)
 - [CAPSTONE15_REMOTE_JOB_SUBMIT_RUNBOOK.md](CAPSTONE15_REMOTE_JOB_SUBMIT_RUNBOOK.md)
 - `data/README.md`
-- `external/IoT-Healthcare-Security-Dataset/README.md`
 
 ## Final Note
 
