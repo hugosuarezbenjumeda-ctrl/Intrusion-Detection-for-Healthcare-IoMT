@@ -6,7 +6,7 @@ This file maps thesis claims and appendix tables to the exact scripts and retain
 
 | Thesis claim | Source scripts | Kept evidence artifacts |
 | --- | --- | --- |
-| The dataset was merged into deterministic train/test metadata tables with protocol and attack-family context. | `scripts/merge_ciciomt_with_metadata.py` | `data/README.md`, `reports/EDA_FOR_MODELING.md`, thesis generators in `Thesis/` |
+| The dataset was merged into deterministic train/test metadata tables with protocol and attack-family context. | `scripts/merge_ciciomt_with_metadata.py` | `data/README.md`, `reports/EDA_FOR_MODELING.md` |
 | EDA showed severe imbalance, protocol concentration, and split drift, which justified low-FPR thresholding and slice-aware reporting. | `scripts/generate_advanced_eda_report.ipynb` | `reports/eda_advanced_20260305_231027/REPORT.md`, `reports/eda_advanced_20260305_231027/tables/protocol_label_counts.csv`, `reports/eda_advanced_20260305_231027/tables/train_test_protocol_shift.csv`, `reports/eda_advanced_20260305_231027/tables/feature_separability_sampled.csv` |
 | Lightweight baselines were enough to show the task was learnable. | `scripts/train_baseline_models_stdlib.py` | `reports/baseline_models_stdlib_20260305_234858/metrics_summary.csv`, `reports/baseline_models_stdlib_20260305_234858/metrics_summary.json` |
 | Full-data GPU models improved headline metrics but still left operational false-positive issues. | `scripts/train_full_gpu_models.py` | `reports/full_gpu_models_20260306_001638/metrics_summary.csv`, `reports/full_gpu_models_20260306_001638/slice_metrics_protocol.csv` |

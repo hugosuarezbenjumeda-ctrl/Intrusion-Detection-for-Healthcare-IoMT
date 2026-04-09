@@ -550,7 +550,6 @@ Some retained scripts were originally intended for remote Linux or HPC execution
 For those, see:
 
 - the paired `.sbatch` files in `scripts/`
-- [CAPSTONE15_REMOTE_JOB_SUBMIT_RUNBOOK.md](CAPSTONE15_REMOTE_JOB_SUBMIT_RUNBOOK.md)
 
 This is mainly relevant for:
 
@@ -586,7 +585,6 @@ Package note:
 
 - [ARTIFACT_MAP.md](ARTIFACT_MAP.md)
 - [UI_RUNTIME_README.md](UI_RUNTIME_README.md)
-- [CAPSTONE15_REMOTE_JOB_SUBMIT_RUNBOOK.md](CAPSTONE15_REMOTE_JOB_SUBMIT_RUNBOOK.md)
 - `data/README.md`
 
 ## Final Note
